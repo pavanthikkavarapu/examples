@@ -1,0 +1,49 @@
+
+
+<div>
+  <div class="modal-header">
+      <h3 class="modal-title">Edit Row</h3>
+  </div>
+  <div class="modal-body">
+    
+    <form name"serviceForm" id="myForm">
+
+	<div class="block">
+  		<label>firstName</label>
+  		<input class="input" type="text" ng-model="vm.entity.firstName">
+	</div>
+	<div class="block">
+  		<label>lastName</label>
+  		<input class="input" name="myfield" type="text" ng-model="vm.entity.lastName">
+	</div>
+	<div class="block">
+  		<label>age</label>
+  		<input class="input" type="text" ng-model="vm.entity.age">
+	</div>
+	<div class="block">
+  		<label>employer</label>
+  		<input class="input" type="text" ng-model="vm.entity.employer">
+	</div>
+	<div class="block">
+  		<label>joiningDate</label>
+  		<input class="input" type="text" ng-model="vm.entity.joiningDate">
+	</div>
+	<div class="block">
+  		<label>location</label>
+  		<input class="input" type="text" ng-model="vm.entity.location">
+	</div>
+	<div class="block">
+  		<label>id</label>
+  		<input class="input" type="text" ng-model="vm.entity.id">
+	</div>
+
+		
+	</form>
+	
+  </div>
+  <div class="modal-footer">
+      <button class="btn btn-primary" ng-disabled="serviceForm.$invalid" ng-click="vm.save()">Save</button>
+      <button class="btn btn-primary" ng-click="vm.remove()">Delete</button>
+      <button class="btn btn-primary" ng-click="$close()">Cancel</button>
+  </div>
+</div>
